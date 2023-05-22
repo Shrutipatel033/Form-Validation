@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+        <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <h1 align="center"><u>Registration Form</u></h1>
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname"   required ><span class="formerror"> </span>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail"  required ><span class="formerror"> </span>
+        </div>
+
+
+        <div class="formdesign" id="phone">
+            Phone No: <input type="phone" name="fphone"   required><span class="formerror"></span>
+        </div>
+
+        <div class="formdesign" id="pass">
+       Password:<input type="password" name="fpass"   required ><span class="formerror"></span>
+
+    </div>
+     <div class="formdesign" id="cpass">
+        Confirm Password: <input type="password" name="fcpass" required ><b><span class="formerror"></span></b>
+     </div>
+
+    
+         <center><input class="but" type="submit" value="Submit"></center>
+        
+    
+    </form>
+</body>
+<script src="main.js"></script>
+
+</html>
